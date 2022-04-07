@@ -227,6 +227,108 @@ class MyApp extends StatelessWidget {
                     ),
                   ],
                 ),
+                //========================LAST SEEN COURSES=================
+                Padding(
+                  padding: EdgeInsets.symmetric(vertical: 20),
+                  child: Text(
+                    "Last Seen Courses : ",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 8),
+                      child: Container(
+                          padding: EdgeInsets.all(10),
+                          color: Colors.purple.shade200,
+                          child: Row(
+                            children: [
+                              Image(
+                                image:
+                                    AssetImage('assets/images/clipboard1.png'),
+                                width: 40,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 30),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Basic Of Designing",
+                                      style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    Text("1 hour, 25 mins")
+                                  ],
+                                ),
+                              ),
+                              Icon(Icons.play_circle_outline_rounded, size: 40)
+                            ],
+                          )),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 8),
+                      child: Container(
+                          padding: EdgeInsets.all(10),
+                          color: Colors.purple.shade200,
+                          child: Row(
+                            children: [
+                              Image(
+                                image:
+                                    AssetImage('assets/images/clipboard1.png'),
+                                width: 40,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 30),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Basic Of Designing",
+                                      style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    Text("1 hour, 25 mins")
+                                  ],
+                                ),
+                              ),
+                              Icon(Icons.play_circle_outline_rounded, size: 40)
+                            ],
+                          )),
+                    ),
+                    Container(
+                        padding: EdgeInsets.all(10),
+                        color: Colors.purple.shade200,
+                        child: Row(
+                          children: [
+                            Image(
+                              image: AssetImage('assets/images/clipboard1.png'),
+                              width: 40,
+                            ),
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 30),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Basic Of Designing",
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Text("1 hour, 25 mins")
+                                ],
+                              ),
+                            ),
+                            Icon(Icons.play_circle_outline_rounded, size: 40)
+                          ],
+                        )),
+                  ],
+                ),
               ],
             ),
           ),
