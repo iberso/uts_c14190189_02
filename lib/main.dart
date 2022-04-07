@@ -13,32 +13,77 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: "Test 1 - C14190189",
         home: Scaffold(
-            backgroundColor: Colors.greenAccent,
-            appBar: AppBar(
-              title: Text("Test 1 - C14190189"),
-            ),
-            body: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20),
-              child: Column(
-                // mainAxisSize: MainAxisSize.max,
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Padding(
-                    padding: EdgeInsets.symmetric(vertical: 20),
-                    child: Text(
-                      "Popular Courses : ",
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          backgroundColor: Colors.greenAccent,
+          appBar: AppBar(
+            title: Text("Test 1 - C14190189"),
+          ),
+          body: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              // mainAxisSize: MainAxisSize.max,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: EdgeInsets.symmetric(vertical: 20),
+                  child: Text(
+                    "Popular Courses : ",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: [
+                        Image(
+                          image: AssetImage('assets/images/calendar.png'),
+                          width: 35,
+                        ),
+                        Text("Science")
+                      ],
                     ),
-                  ),
-                  Row(
-                    children: [Text("sd"), Text("sd")],
-                  ),
-                  Text(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit lectus libero, sit amet blandit odio pharetra ac. In ultricies condimentum cursus. Nunc in lorem enim. Donec id nisi lorem. Cras vulputate ex orci, sed molestie massa dapibus quis. Nullam et mattis quam. Etiam rhoncus, est sit amet maximus tincidunt, ligula felis accumsan orci, et scelerisque ante quam at lorem. Sed commodo consequat libero ut suscipit. Proin in eleifend turpis. Nam dui nulla, placerat vitae mi ac, egestas posuere urna.",
-                  ),
-                ],
-              ),
-            )));
+                    Column(
+                      children: [
+                        Image(
+                          image: AssetImage('assets/images/coffee.png'),
+                          width: 35,
+                        ),
+                        Text("Cooking")
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Image(
+                          image:
+                              AssetImage('assets/images/drawing-compass.png'),
+                          width: 35,
+                        ),
+                        Text("Math")
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Image(
+                          image: AssetImage('assets/images/dna.png'),
+                          width: 35,
+                        ),
+                        Text("Biology")
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Image(
+                          image: AssetImage('assets/images/pen-point.png'),
+                          width: 35,
+                        ),
+                        Text("Design")
+                      ],
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ));
   }
 }
