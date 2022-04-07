@@ -300,35 +300,71 @@ class MyApp extends StatelessWidget {
                             ],
                           )),
                     ),
-                    Container(
-                        padding: EdgeInsets.all(10),
-                        color: Colors.purple.shade200,
-                        child: Row(
-                          children: [
-                            Image(
-                              image: AssetImage('assets/images/clipboard1.png'),
-                              width: 40,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 30),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "Basic Of Designing",
-                                    style: TextStyle(
-                                        fontSize: 15,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                  Text("1 hour, 25 mins")
-                                ],
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 8),
+                      child: Container(
+                          padding: EdgeInsets.all(10),
+                          color: Colors.purple.shade200,
+                          child: Row(
+                            children: [
+                              Image(
+                                image:
+                                    AssetImage('assets/images/clipboard1.png'),
+                                width: 40,
                               ),
-                            ),
-                            Icon(Icons.play_circle_outline_rounded, size: 40)
-                          ],
-                        )),
+                              Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 30),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Basic Of Designing",
+                                      style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    Text("1 hour, 25 mins")
+                                  ],
+                                ),
+                              ),
+                              Icon(Icons.play_circle_outline_rounded, size: 40)
+                            ],
+                          )),
+                    ),
                   ],
                 ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Column(
+                      children: [
+                        Icon(
+                          Icons.house_siding,
+                          size: 30,
+                        ),
+                        Text("Home")
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Icon(
+                          Icons.menu_book_rounded,
+                          size: 30,
+                        ),
+                        Text("Explore")
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Icon(
+                          Icons.mail,
+                          size: 30,
+                        ),
+                        Text("Chat")
+                      ],
+                    )
+                  ],
+                )
               ],
             ),
           ),
